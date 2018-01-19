@@ -1,0 +1,19 @@
+{
+  "name": "prueba-20180119-concepto-session",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2",
+    "express-session": "^1.15.6",
+    "nodemon": "^1.14.11",
+    "uuid": "^3.2.1"
+  }
+}
