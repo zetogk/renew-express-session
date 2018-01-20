@@ -14,10 +14,12 @@ app.use(session({
     resave: true,
     saveUninitialized: true,
     cookie: {
+        path: '/',
         httpOnly: true,
         secure: process.env.NODE_ENV === 'production' ? true : false,
-        expires: 90000
-    }
+        maxAge: 900000
+    },
+    rolling: true
 }));
 
 app.use(function (req, res, next) {
